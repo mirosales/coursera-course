@@ -1,0 +1,88 @@
+Curso HTML-CSS_Javascript
+
+Para desplegar nuestra pagina web usamos node
+descargamos el paquete browser-sync
+
+browser-sync start --server --directory --files "*" 
+
+Paginas que nos pueden servir para compartir codigo
+jsfiddle.net
+CodePen.io
+
+Paginas donde podemos encontrar ayudas
+css-tricks
+
+Consideraciones de html
+MODELOS DE CONTENIDO
+
+Block-Level Elements  Renderiza para comenzar sobre una nueva linea 
+Inline Elements Renderiza sobre la misma linea
+
+Para entidades de referencia poner
+Por ejemplo para < &lt para > &gt para & &amp
+Para no separar una frase La&nbsp;victoria&nbsp;es&nbsp;un&nbsp;gran&nbsp;logro
+Para hacer un &copy copyright 
+
+CSS
+Hay diferentes formas de aplicar reglas de css
+ *Element Selector
+		
+ 		p {
+		  color: blue;
+		  font-size: 20px;
+		  width: 200px;
+		}
+ *Class selector
+		.blue{
+			color:blue;
+		}
+		
+		<p class="blue"> blabla </p>
+  *id selector
+		#name{
+			color:blue;
+		}
+		<p id="blue" >hola</p>
+
+Combining Selectors
+		Element with class selector
+		p.big{
+			font-size: 20px;
+		}
+		
+		Child Selector
+		article > p {
+			color: blue;
+		}
+		
+		Descendent selector (selector selector)
+
+
+Los links tienen estados y pueden ser manejados con pseudo class
+los link pueden tener un estilo diferente antes de dar click en el como despues de darle click
+
+
+
+La regla de especificidad (puntaje)funciona de la siguiente manera:
+hay cuatro cajas de izquierda a derecha
+style   ID    class--pseudo-class	#elements
+ x		 x			x					x
+
+gana el numero xxxx mas grande
+
+hay un valor que hace que quite las reglas de cascada css y es la palabra !important
+evitemos usar esta palabra ya que puede ser un dolor de cabeza el mantenimiento de la pagina
+
+Tema: margenes
+cuando tenemos dos cajas (dos elementos) horizontalmente, la margen-derecha del caja que esta en la izquierda se suma
+con la margen-izquierda de la caja derecha
+Caso que no ocurre cuando las cajas estan de arriba a abajo, se toma la margen mayor de las dos cajas, hay que tener en cuenta
+que las margenes que se tienen en cuenta son la de abajo para la caja de mas arriba y la margen de arriba de la caja que esta mas abajo.
+
+
+El navegador por defecto configura unas reglas de css, podemos modificarlas de la siguiente manera:
+usas un start selector
+*{
+	box-sizing:border-box;
+	
+}
