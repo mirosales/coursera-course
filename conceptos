@@ -57,6 +57,21 @@ Combining Selectors
 		
 		Descendent selector (selector selector)
 
+Selector de atributo
+	Escoge los elementos que tengan un atributo especificado
+	
+	a[title] {
+		color:red
+	}
+	
+	a[href="https://example.com"] {
+	
+	}
+Selectores con pseudoclases y pseudo elementos
+	
+	a: hover {}
+	
+	p::first-line { }
 
 Los links tienen estados y pueden ser manejados con pseudo class
 los link pueden tener un estilo diferente antes de dar click en el como despues de darle click
